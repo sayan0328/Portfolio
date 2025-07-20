@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayan Basak - Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/main/favicon.svg" type="image/svg+xml">
+</head>
+
+<body data-theme="dark">
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <a href="index.html">
+                        <svg viewBox="0 -1 24 24" fill="white">
+                            <path
+                                d="M18.5 7.5c0-1.933-1.567-3.5-3.5-3.5H9c-1.933 0-3.5 1.567-3.5 3.5S7.067 11 9 11h6c1.933 0 3.5 1.567 3.5 3.5s-1.567 3.5-3.5 3.5H9c-1.933 0-3.5-1.567-3.5-3.5"
+                                stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none" />
+                        </svg>
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button class="theme-toggle" onclick="toggleTheme()">🌙</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <img src="assets/images/main/display_picture.jpg" draggable="false" alt="DP">
+            <div class="hero-container">
+                <h1>Hey, I'm Sayan! 👋</h1>
+
+                <p class="subtitle"><span id="element"></span></p>
+                <p class="description">
+                    Currently pursuing Information Technology at JIS College of Engineering.
+                    Passionate about Android and Web development, DSA problem solving using Java, and building
+                    innovative applications.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">Explore My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="https://drive.google.com/file/d/1051YnWr_VbRiBVK0xDQunAPX9PmkFb-P/view?usp=sharing"
+                        target="_blank" class="btn btn-secondary">Download CV</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">About Me</h2>
+            <div class="about-content">
+                <div>
+                    <div class="stats">
+                        <div class="stat-item animate-on-scroll animate-delay-1">
+                            <div class="stat-title">IT'26</div>
+                            <div class="stat-subtitle">B.Tech in IT</div>
+                        </div>
+                        <div class="stat-item animate-on-scroll animate-delay-2">
+                            <div class="stat-title">Java</div>
+                            <div class="stat-subtitle">Core Language</div>
+                        </div>
+                        <div class="stat-item animate-on-scroll animate-delay-3">
+                            <div class="stat-title">Android</div>
+                            <div class="stat-subtitle">Kotlin</div>
+                        </div>
+                        <div class="stat-item animate-on-scroll animate-delay-4">
+                            <div class="stat-title">Web</div>
+                            <div class="stat-subtitle">Javascipt</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text animate-on-scroll animate-delay-5">
+                    <p>I'm a passionate Information Technology student from West Bengal, India, with a strong foundation
+                        in Java programming. My journey in tech revolves around solving complex data structure and
+                        algorithm problems, which sharpens my logical thinking and problem-solving abilities.</p>
+                    <br>
+                    <p>Beyond academics, I love building applications that solve real-world problems. When I'm
+                        not coding, you'll find me listening to music, singing, or diving into games. I'm actively
+                        seeking opportunities to contribute to India's growing IT industry and make a meaningful impact
+                        through technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category animate-on-scroll animate-delay-1">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-skill="java">Java</span>
+                        <span class="skill-tag" data-skill="c">C</span>
+                        <span class="skill-tag" data-skill="python">Python</span>
+                        <span class="skill-tag" data-skill="javascript">JavaScript</span>
+                        <span class="skill-tag" data-skill="kotlin">Kotlin</span>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll animate-delay-2">
+                    <h3>Mobile Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-skill="compose">Compose</span>
+                        <span class="skill-tag" data-skill="firebase">Firebase</span>
+                        <span class="skill-tag" data-skill="room">Room</span>
+                        <span class="skill-tag" data-skill="koin">Koin</span>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll animate-delay-3">
+                    <h3>Core Concepts</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-skill="data-structures">Data Structures</span>
+                        <span class="skill-tag" data-skill="algorithms">Algorithms</span>
+                        <span class="skill-tag" data-skill="oop">OOP</span>
+                        <span class="skill-tag" data-skill="database-design">Database Design</span>
+                        <span class="skill-tag" data-skill="sql">SQL</span>
+                        <span class="skill-tag" data-skill="nosql">NoSQL</span>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll animate-delay-4">
+                    <h3>Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-skill="git">Git</span>
+                        <span class="skill-tag" data-skill="vscode">VS Code</span>
+                        <span class="skill-tag" data-skill="android-studio">Android Studio</span>
+                        <span class="skill-tag" data-skill="intellij">IntelliJ IDEA</span>
+                        <span class="skill-tag" data-skill="eclipse">Eclipse</span>
+                        <span class="skill-tag" data-skill="mongodb">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-card">
+                <h3>Gyanchakkhu - Smart Library Management</h3>
+                <p class="project-description">
+                    A comprehensive Android application designed to modernize library management systems.
+                    Features include book cataloging, user management, borrowing/return tracking, and intelligent search
+                    functionality.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag skill-tag" data-skill="android-studio">Android</span>
+                    <span class="tech-tag skill-tag" data-skill="kotlin">Kotlin</span>
+                    <span class="tech-tag skill-tag" data-skill="compose">Compose</span>
+                    <span class="tech-tag skill-tag" data-skill="koin">Koin</span>
+                    <span class="tech-tag skill-tag" data-skill="firebase">Firebase</span>
+                    <span class="tech-tag skill-tag" data-skill="nosql">NoSQL</span>
+                </div>
+                <div class="project-links">
+                    <a href="projects/gyanchakkhu.html" class="btn btn-primary">View</a>
+                    <a href="https://github.com/sayan0328/Gyanchakkhu-mobile-app" target="_blank"
+                        class="btn btn-secondary">Source Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <p>I'm always open to discussing new opportunities, collaborating on projects, or just having a chat
+                    about technology and innovation.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="16" fill="currentColor" viewBox="2 2 20 16">
+  <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+</svg>
+
+                        <h4>EMAIL</h4>
+                        <a href="mailto:sayanbasak42@gmail.com">sayanbasak42@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zM8 8h3.6v2.2h.05c.5-.94 1.75-2.2 3.6-2.2 3.85 0 4.6 2.53 4.6 5.8V24h-4v-8.1c0-1.9-.03-4.3-2.65-4.3-2.65 0-3.05 2.07-3.05 4.2V24h-4V8z" />
+                        </svg>
+                        <h4>LINKEDIN</h4>
+                        <a href="https://www.linkedin.com/in/sayan-basak003/" target="_blank">Connect with me</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 008.05 10.95c.59.11.8-.26.8-.58v-2.06c-3.27.71-3.96-1.57-3.96-1.57-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.06 1.83 2.78 1.3 3.45.99.11-.77.41-1.3.75-1.6-2.61-.3-5.36-1.3-5.36-5.8 0-1.28.46-2.33 1.22-3.15-.12-.3-.53-1.5.12-3.13 0 0 .99-.32 3.25 1.2a11.2 11.2 0 015.92 0c2.26-1.52 3.25-1.2 3.25-1.2.65 1.63.24 2.83.12 3.13.76.82 1.22 1.87 1.22 3.15 0 4.51-2.76 5.5-5.38 5.8.42.36.8 1.07.8 2.15v3.19c0 .32.21.7.81.58A11.5 11.5 0 0023.5 12C23.5 5.73 18.27.5 12 .5z" />
+                        </svg>
+                        <h4>GITHUB</h4>
+                        <a href="https://github.com/sayan0328" target="_blank">View my code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sayan Basak. Thanks for scrolling!</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
