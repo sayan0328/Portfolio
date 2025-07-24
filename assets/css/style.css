@@ -480,6 +480,10 @@ body {
     background: linear-gradient(135deg, #7f52ff 0%, #6b46c1 100%);
 }
 
+.skill-tag[data-skill="abap"]:hover {
+    background: linear-gradient(135deg, #2e7cd6 0%, #1e5fb8 100%);
+}
+
 .skill-tag[data-skill="android-studio"]:hover {
     background: linear-gradient(135deg, #3ddc84 0%, #2e7d32 100%);
 }
